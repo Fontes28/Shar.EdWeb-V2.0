@@ -125,6 +125,9 @@ body {
     width: 100%;
 }
 
+.menu-icon{
+    border-radius: 100px;
+}
 
 .navbar .menu-list .menu-item  .menu-link{    
     display: flex;
