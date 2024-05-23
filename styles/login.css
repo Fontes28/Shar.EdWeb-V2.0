@@ -23,12 +23,10 @@ main {
 a { text-decoration: none; font-size: small; }
 h1 { margin: 20px 0; }
 h2{ font-family: Oxanium; color: #1c044d; font-size: 35px;}
-ul { list-style: none; }
 
 /**
  * Flex rules
  */
-
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -69,9 +67,7 @@ ul { list-style: none; }
     flex-wrap: wrap;
 }
 
-/**
- *
- */
+/*------------------------------------------*/
 
 .panel {
     margin-bottom: 10px;
@@ -91,16 +87,9 @@ ul { list-style: none; }
     height: 618px;
 }
 
-/**
- * Login section
- */
-.login-with-fb,
-form { width: 100%; }
+/*Login*/
 
-.register,
-form { padding: 30px 20px; }
-
-.login-with-fb { padding: 30px 20px 20px 20px; }
+form { padding: 30px 20px; width: 100%; }
 
 form .sr-only { display: none; }
 
@@ -133,75 +122,6 @@ form input:focus {
     width: 100%;
     border: none;
 }
-
-/**
- * Separator login form from login with fb
- */
-.separator span {
-    background-color: #dbdbdb;
-    height: 1px;
-    width: calc(100% - 10px);
-}
-
-.separator .or {
-    color: #808080;
-    font-weight: bold;
-}
-
-.separator { padding: 0 20px; }
-.separator span:first-child { margin-right: 10px;}
-.separator span:last-child { margin-left: 10px;}
-
-/**
- * Login with fb section
- */
-.login-with-fb a { 
-    color: #385185; 
-}
-
-.login-with-fb > a { font-size: 12px; }
-.login-with-fb div a { font-weight: bold; }
-.login-with-fb div { margin-bottom: 15px; }
-
-/**
- * Register section
- */
-.register * { font-size: 14px; }
-.register a { 
-    color: #0095f6;
-    font-weight: bold;
-}
-
-.register p { margin-right: 5px; }
-
-/**
- * App download
- */
-.app-download { padding: 15px; }
-.app-download p { padding: 10px 0; }
-.app-download img { 
-    height: 40px; 
-    margin: 0 5px;
-}
-
-/**
- * Footer
- */
-footer {
-    margin: 0 auto 30px auto;
-    max-width: 935px;
-}
-footer ul { margin-bottom: 20px; }
-footer ul li { margin: 0 10px 10px; } 
-footer ul li a { color: #385185; }
-footer .copyright { color: #808080; }
-footer ul li a,
-footer .copyright { 
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
- }
-
 
 /**
  * Media queries
