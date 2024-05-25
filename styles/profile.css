@@ -10,7 +10,6 @@
     --header-height: 3rem;
     --z-tooltip: 10;
     --z-fixed: 100;
-    --title-color: hsl(var(--hue), 12%, 15%);
 }
 
 /*reset*/
@@ -480,7 +479,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--container-color); 
+    background-color: var(--container-color);
     z-index: var(--z-fixed);
     transition: .4s;
   }
