@@ -25,6 +25,8 @@ if($user->signup()){
         "id" => $user->id,
         "email" => $user->email
     );
+    header('Location: ../../frontend/pages/login.html');
+    unset($_POST);
 }
 else{
     $user_arr=array(

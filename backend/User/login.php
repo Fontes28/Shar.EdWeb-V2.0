@@ -12,8 +12,8 @@ $db = $database->getConnection();
 $user = new User($db);
 
 // set ID property of user to be edited
-$user->email = isset($_GET['email']) ? $_GET['email'] : die();
-$user->password = base64_encode(isset($_GET['password']) ? $_GET['password'] : die());  
+$user->email = isset($_POST['email']) ? $_POST['email'] : die();
+$user->password = base64_encode(isset($_POST['password']) ? $_POST['password'] : die());  
 
 // read the details of user to be edited
 $stmt = $user->login();
@@ -26,7 +26,9 @@ if($stmt->rowCount() > 0){
         "message" => "Successfully Login!",
         "id" => $row['id'],
         "email" => $row['email']
+        
     );
+    header('Location: ../../frontend/pages/feed.html');
 }
 else{
     $user_arr=array(
