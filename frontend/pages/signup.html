@@ -18,7 +18,7 @@
                 <h2 class="flex justify-content-center">
                     Registrar
                 </h2>
-                <form>
+                <form method="post" action="../../backend/User/signup.php">
                     <label for="name" class="sr-only">Email</label>
                     <input name="name" placeholder="Nome Completo" />
 
@@ -31,7 +31,7 @@
                     <label for="confirm-password" class="sr-only">Senha</label>
                     <input name="confirm-password" type="password" placeholder="Confirme a Senha" />
 
-                    <input type="button"  class="btnLogin" value="Registrar" onclick="window.open('/pages/feed.html')">
+                    <input type="submit"  class="btnLogin" value="Registrar">
                 </form>
                 <div class="flex separator align-items-center">
                    

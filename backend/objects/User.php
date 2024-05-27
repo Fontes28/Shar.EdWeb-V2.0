@@ -1,10 +1,5 @@
 <?php
 
-/*
-    Author:- Vivek Kumar
-    Date:- 2019-04-09
-    Purpose:- User Class to manage actions: Login and SignUp with user details.
-*/
 
 class User{
  
@@ -14,7 +9,8 @@ class User{
  
     // object properties
     public $id;
-    public $username;
+    public $name;
+    public $email;
     public $password;
     public $created;
  
@@ -33,19 +29,21 @@ class User{
         $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
-                    username=:username, password=:password, created=:created";
+                    email=:email, password=:password, name=:name, created=:created";
     
         // prepare query
         $stmt = $this->conn->prepare($query);
     
         // sanitize
-        $this->username=htmlspecialchars(strip_tags($this->username));
+        $this->email=htmlspecialchars(strip_tags($this->email));
+        $this->name=htmlspecialchars(strip_tags($this->name));
         $this->password=htmlspecialchars(strip_tags($this->password));
         $this->created=htmlspecialchars(strip_tags($this->created));
     
         // bind values
-        $stmt->bindParam(":username", $this->username);
+        $stmt->bindParam(":email", $this->email);
         $stmt->bindParam(":password", $this->password);
+        $stmt->bindParam(":name", $this->name);
         $stmt->bindParam(":created", $this->created);
     
         // execute query
@@ -62,11 +60,11 @@ class User{
     function login(){
         // select all query with user inputed username and password
         $query = "SELECT
-                    `id`, `username`, `password`, `created`
+                    `id`, `name`, `email`, `password`, `created`
                 FROM
                     " . $this->table_name . " 
                 WHERE
-                    username='".$this->username."' AND password='".$this->password."'";
+                    email='".$this->email."' AND password='".$this->password."'";
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         // execute query
@@ -80,7 +78,7 @@ class User{
             FROM
                 " . $this->table_name . " 
             WHERE
-                username='".$this->username."'";
+                email='".$this->email."'";
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         // execute query

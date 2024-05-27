@@ -1,6 +1,6 @@
 <?php
 // include database and object files
-include_once '../config/database.php';
+include_once '../config/db.php';
 include_once '../objects/user.php';
  
 
@@ -12,7 +12,7 @@ $db = $database->getConnection();
 $user = new User($db);
 
 // set ID property of user to be edited
-$user->username = isset($_GET['username']) ? $_GET['username'] : die();
+$user->email = isset($_GET['email']) ? $_GET['email'] : die();
 $user->password = base64_encode(isset($_GET['password']) ? $_GET['password'] : die());  
 
 // read the details of user to be edited
@@ -25,7 +25,7 @@ if($stmt->rowCount() > 0){
         "status" => true,
         "message" => "Successfully Login!",
         "id" => $row['id'],
-        "username" => $row['username']
+        "email" => $row['email']
     );
 }
 else{

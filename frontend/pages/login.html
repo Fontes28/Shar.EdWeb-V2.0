@@ -18,14 +18,14 @@
                 <h2 class="flex justify-content-center">
                     Entrar
                 </h2>
-                <form>
+                <form method="post" action="../../backend/User/login.php">
                     <label for="email" class="sr-only">Email</label>
                     <input name="email" placeholder="e-mail" />
 
                     <label for="password" class="sr-only">Senha</label>
                     <input name="password" type="password" placeholder="Senha" />
                     <a href="../pages/auxPages/password_recover.html">Esqueceu a Senha?</a>
-                    <input type="button"  class="btnLogin" value="Entrar" onclick="window.open('/pages/feed.html')">
+                    <input type="submit"  class="btnLogin" value="Entrar">
                 </form>
                 <div class="flex separator align-items-center">
                    
