@@ -1,32 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');   
+/*Importação Fonte Título - Font-family=Oxanium*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
+/*Reset de Posicionamento e Fonte Geral*/
 * {
     border: none;
-    box-sizing: border-box;
+    
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
+html{
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #9977dd 50%, #008e8c 100%);
+    background-color: #D9AFD9;
+    scroll-margin: 0;
+    overflow: scroll;
+    
+}
 
+/*Gradiente no background(Site Gerador)*/
 body {
     background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #9977dd 50%, #008e8c 100%);    
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #9977dd 50%, #008e8c 100%);
     height: 100vh;
 }
 
+/*Container Principal do body*/
 main {
     height: 100vh;
     margin: auto;
     max-width: 935px;
 }
 
-a { text-decoration: none; font-size: small; }
-h1 { margin: 20px 0; }
-h2{ font-family: Oxanium; color: #1c044d; font-size: 35px;}
+/*Tags nativas do html*/
+a {
+    text-decoration: none;
+    font-size: small;
+}
 
-/**
- * Flex rules
- */
+h1 { margin: 20px 0;}
+
+h2 { font-family: Oxanium;
+    color: #1c044d;
+    font-size: 35px;
+}
+
+img {
+    height: 618px;
+}
+
+/*Configurações do Flex/Grid (Internet)*/
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -69,6 +91,7 @@ h2{ font-family: Oxanium; color: #1c044d; font-size: 35px;}
 
 /*------------------------------------------*/
 
+/*Efeito de Vidro Container*/
 .panel {
     margin-bottom: 10px;
     padding: 10px;
@@ -80,16 +103,15 @@ h2{ font-family: Oxanium; color: #1c044d; font-size: 35px;}
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/*Section do Form(Definir Largura)*/
 #auth { max-width: 350px; }
-#mobile { max-width: 454px; }
 
-#mobile img {
-    height: 618px;
+
+/*Configurações do Form de Login/SignUp*/
+form {
+    padding: 30px 20px;
+    width: 100%; 
 }
-
-/*Login*/
-
-form { padding: 30px 20px; width: 100%; }
 
 form .sr-only { display: none; }
 
@@ -111,7 +133,7 @@ form input:focus {
     border: 1px solid #808080;
     outline: none;
 }
-
+/*Botão*/
 .btnLogin {
     background-color: #140592;
     border-radius: 15px;
@@ -122,14 +144,12 @@ form input:focus {
     width: 100%;
     border: none;
 }
+/*--------------------------------------------------*/
 
-/**
- * Media queries
- */
+
 
 @media screen and (max-width: 767px) {
-    main { margin: 30px auto 50px auto; }
-    footer .copyright,
-    footer ul li a { font-size: 13px; }
+    
+    ul li a { font-size: 13px; }
 }
 
