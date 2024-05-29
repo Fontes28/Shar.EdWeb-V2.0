@@ -151,6 +151,9 @@ body {
 {
     opacity: .7;
 }
+.menu-icon{
+    border-radius: 100%;
+}
 
 /*user information div*/
 .navbar .user-container {
