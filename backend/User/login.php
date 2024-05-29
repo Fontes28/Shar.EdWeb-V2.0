@@ -35,6 +35,8 @@ else{
         "status" => false,
         "message" => "Invalid Username or Password!",
     );
+    setcookie('msg',$user_arr['message'],time()+600,'/');
+    header('Location: ../../frontend/pages/auxPages/error.php');
 }
 // make it json format
 print_r(json_encode($user_arr));
