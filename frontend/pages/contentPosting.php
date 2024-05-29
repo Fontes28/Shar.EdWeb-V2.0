@@ -23,7 +23,7 @@
         <!--item list-->
         <ul class="menu-list">   
             <li class="menu-item">                        
-                <a class="menu-link" href="./profile.html"> 
+                <a class="menu-link" href="./profile.php"> 
                     <img src="../images/profile_image.svg" title="Profile" class="menu-icon" alt="profile-image" height="48" width="48">
                     <span class="menu-link-text">Perfil</span>                            
                 </a>

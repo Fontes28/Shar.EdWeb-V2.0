@@ -22,13 +22,13 @@
         <!--item list-->
         <ul class="menu-list">   
             <li class="menu-item">                        
-                <a class="menu-link" href="./profile.html"> 
+                <a class="menu-link" href="./profile.php"> 
                     <img src="../images/profile_image.svg" title="Profile" class="menu-icon" alt="profile-image" height="48" width="48">
                     <span class="menu-link-text">Perfil</span>                            
                 </a>
             </li>
             <li class="menu-item">                        
-                <a class="menu-link" href="./contentPosting.html"> 
+                <a class="menu-link" href="./contentPosting.php"> 
                     <img src="../images/post.svg" title="Post" class="menu-icon" alt="post-content" height="48" width="48">
                     <span class="menu-link-text">Postar</span>                            
                 </a>
@@ -75,7 +75,7 @@
             <div class="profile-info">
                 <h2 class="username">Murilo Pina</h2>
                 <p class="bio">Software Engineer | Basketball</p>
-                <a href="../pages/auxPages/editProfile.html"><input type="button" value="Editar" class="edit-button"></a>
+                <a href="../pages/auxPages/editProfile.php"><input type="button" value="Editar" class="edit-button"></a>
             </div>
             
             <div class="stats-box">

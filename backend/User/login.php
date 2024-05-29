@@ -28,7 +28,7 @@ if($stmt->rowCount() > 0){
         "email" => $row['email']
         
     );
-    header('Location: ../../frontend/pages/feed.html');
+    header('Location: ../../frontend/pages/feed.php');
 }
 else{
     $user_arr=array(
