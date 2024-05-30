@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+$name=$_COOKIE['name'];
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -73,7 +75,7 @@
         <div class="profile-header">
             <img src="https://via.placeholder.com/80" alt="Profile Image" class="profile-image">
             <div class="profile-info">
-                <h2 class="username">Murilo Pina</h2>
+                <h2 class="username"><?php echo $name?></h2>
                 <p class="bio">Software Engineer | Basketball</p>
                 <a href="../pages/auxPages/editProfile.php"><input type="button" value="Editar" class="edit-button"></a>
             </div>

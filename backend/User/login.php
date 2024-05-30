@@ -28,6 +28,7 @@ if($stmt->rowCount() > 0){
         "email" => $row['email']
         
     );
+    setcookie('name',$row['name'],time()+3600,'/');
     header('Location: ../../frontend/pages/feed.php');
 }
 else{
