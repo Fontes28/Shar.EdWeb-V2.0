@@ -1,6 +1,4 @@
-<?php
-$name=$_COOKIE['name'];
-?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,11 +16,17 @@ $name=$_COOKIE['name'];
         </div>
 
         <!--search input-->
-        <input type="search" name="search" placeholder="Buscar"
+       <input type="search" name="search" placeholder="Buscar"
          class="navbar-search" id="search">
 
         <!--item list-->
         <ul class="menu-list">   
+            <li class="menu-item">                        
+                <a class="menu-link" class="menu-link" href="./feed.php">
+                    <img src="../images/homeIcon.svg" title="Home" class="menu-icon" alt="Home" height="48" width="48">
+                    <span class="menu-link-text">Home</span>    
+                </a>
+            </li>
             <li class="menu-item">                        
                 <a class="menu-link" href="./profile.php"> 
                     <img src="../images/profile_image.svg" title="Profile" class="menu-icon" alt="profile-image" height="48" width="48">
@@ -35,22 +39,17 @@ $name=$_COOKIE['name'];
                     <span class="menu-link-text">Postar</span>                            
                 </a>
             </li>
-            <li class="menu-item">                        
-                <a class="menu-link" class="menu-link" href="#">
-                    <img src="./assets/img/user.svg" title="Clientes" class="menu-icon" alt="user">
-                    <span class="menu-link-text">Clientes</span>    
-                </a>
-            </li>
+            
             <li class="menu-item">                            
-                <a class="menu-link" href="#">
-                    <img src="./assets/img/vet.svg" title="Vets" class="menu-icon" alt="vet">
-                    <span class="menu-link-text">Vets</span>    
+                <a class="menu-link" href="./saved">
+                    <img src="../images/savedIcon.svg" title="Saved" class="menu-icon" alt="saved" height="48" width="48">
+                    <span class="menu-link-text">Salvos</span>    
                 </a>
             </li>
             <li class="menu-item">                        
-                <a class="menu-link" href="#">
-                    <img src="./assets/img/settings.svg" title="Ajustes" class="menu-icon" alt="settings">
-                    <span class="menu-link-text">Ajustes</span>    
+                <a class="menu-link" href="./settings.php">
+                    <img src="../images/settingsIcon.svg" title="Settings" class="menu-icon" alt="Settings" height="48" width="48">
+                    <span class="menu-link-text">Configurações</span>    
                 </a>
             </li>
         </ul>
@@ -65,8 +64,8 @@ $name=$_COOKIE['name'];
                 <p class="user-occupation">Veterinária</p>
             </div>
         </div>
-        <a class="logout-btn" href="#">
-            <img class="logout-img" src="./assets/img/log-out.svg" alt="logout">
+        <a class="menu-item" href="./login.php">
+            <img class="menu-icon" src="../images/logoutIcon.svg" alt="logout" height="48" width="48">
         </a>
     </div>
 </nav>
@@ -75,7 +74,7 @@ $name=$_COOKIE['name'];
         <div class="profile-header">
             <img src="https://via.placeholder.com/80" alt="Profile Image" class="profile-image">
             <div class="profile-info">
-                <h2 class="username"><?php echo $name?></h2>
+                <h2 class="username">Nome</h2>
                 <p class="bio">Software Engineer | Basketball</p>
                 <a href="../pages/auxPages/editProfile.php"><input type="button" value="Editar" class="edit-button"></a>
             </div>

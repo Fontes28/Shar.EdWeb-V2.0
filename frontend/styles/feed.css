@@ -185,6 +185,10 @@ body {
     font-weight: lighter;
 }
 
+.logout-img{
+    border-radius: 100px;
+}
+
 
 
 /*navbar.active*/
@@ -551,4 +555,9 @@ body {
   }
   .menu-icon{
     border-radius: 100px;
+}
+#search{
+    position: relative;
+    z-index: -1;
+
 }

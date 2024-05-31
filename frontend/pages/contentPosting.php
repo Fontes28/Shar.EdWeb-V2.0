@@ -17,11 +17,17 @@
         </div>
 
         <!--search input-->
-        <input type="search" name="search" placeholder="Buscar"
+       <input type="search" name="search" placeholder="Buscar"
          class="navbar-search" id="search">
 
         <!--item list-->
         <ul class="menu-list">   
+            <li class="menu-item">                        
+                <a class="menu-link" class="menu-link" href="./feed.php">
+                    <img src="../images/homeIcon.svg" title="Home" class="menu-icon" alt="Home" height="48" width="48">
+                    <span class="menu-link-text">Home</span>    
+                </a>
+            </li>
             <li class="menu-item">                        
                 <a class="menu-link" href="./profile.php"> 
                     <img src="../images/profile_image.svg" title="Profile" class="menu-icon" alt="profile-image" height="48" width="48">
@@ -29,27 +35,22 @@
                 </a>
             </li>
             <li class="menu-item">                        
-                <a class="menu-link" href="#">
-                    <img src="./assets/img/pet.svg" title="Pets" class="menu-icon" alt="pet">
-                    <span class="menu-link-text">Pets</span>    
+                <a class="menu-link" href="./contentPosting.php"> 
+                    <img src="../images/post.svg" title="Post" class="menu-icon" alt="post-content" height="48" width="48">
+                    <span class="menu-link-text">Postar</span>                            
                 </a>
             </li>
-            <li class="menu-item">                        
-                <a class="menu-link" class="menu-link" href="#">
-                    <img src="./assets/img/user.svg" title="Clientes" class="menu-icon" alt="user">
-                    <span class="menu-link-text">Clientes</span>    
-                </a>
-            </li>
+            
             <li class="menu-item">                            
-                <a class="menu-link" href="#">
-                    <img src="./assets/img/vet.svg" title="Vets" class="menu-icon" alt="vet">
-                    <span class="menu-link-text">Vets</span>    
+                <a class="menu-link" href="./saved">
+                    <img src="../images/savedIcon.svg" title="Saved" class="menu-icon" alt="saved" height="48" width="48">
+                    <span class="menu-link-text">Salvos</span>    
                 </a>
             </li>
             <li class="menu-item">                        
-                <a class="menu-link" href="#">
-                    <img src="./assets/img/settings.svg" title="Ajustes" class="menu-icon" alt="settings">
-                    <span class="menu-link-text">Ajustes</span>    
+                <a class="menu-link" href="./settings.php">
+                    <img src="../images/settingsIcon.svg" title="Settings" class="menu-icon" alt="Settings" height="48" width="48">
+                    <span class="menu-link-text">Configurações</span>    
                 </a>
             </li>
         </ul>
@@ -64,8 +65,8 @@
                 <p class="user-occupation">Veterinária</p>
             </div>
         </div>
-        <a class="logout-btn" href="./login.html">
-            <img class="logout-img" src="./assets/img/log-out.svg" alt="logout">
+        <a class="menu-item" href="./login.php">
+            <img class="menu-icon" src="../images/logoutIcon.svg" alt="logout" height="48" width="48">
         </a>
     </div>
 </nav>
