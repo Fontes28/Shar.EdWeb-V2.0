@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shar.Ed</title>
     <link rel="stylesheet" href="../styles/feed.css">
+    <link rel="icon" type="image/x-icon" href="../images/sharEd.ico">
     <script src="../scripts/sidebar.js" defer></script>
 </head>
 <nav class="navbar">
     <div class="navbar-container">
         <!--logo div-->
-        <div class="navbar-logo-div">
-            
+        <div class="navbar-logo-div"> 
             <button class="navbar-toggler"><img class="navbar-toggler-img" src="../images/sharEd.svg" alt="menu-toggler" height="64" width="64"></button>
         </div>
 

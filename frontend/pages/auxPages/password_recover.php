@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperação de Senha</title>
     <link rel="stylesheet" href="../../styles/password_recover.css">
+    <link rel="icon" type="image/x-icon" href="../../images/sharEd.ico">
 </head>
 <body>
     <main class="flex align-items-center justify-content-center">

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shar.Ed</title>
+    <title>Postar Conteúdo</title>
     <link rel="stylesheet" href="../styles/contentPosting.css">
+    <link rel="icon" type="image/x-icon" href="../images/sharEd.ico">
     <script src="../scripts/sidebar.js" defer></script>
 </head>
 <nav class="navbar">
@@ -74,16 +75,16 @@
     <div class="form-container dashboard">
         <form>
             <!-- File Input -->
-            <label for="file">File:</label>
+            <label for="file">Arquivo:</label>
             <input type="file" id="file" name="file">
             <!-- Title Input -->
-            <label for="title">Title:</label>
+            <label for="title">Título:</label>
             <input type="text" id="title" name="title">
             <!-- Description Input -->
-            <label for="description">Description:</label>
+            <label for="description">Descrição:</label>
             <textarea id="description" name="description"></textarea>
             <!-- Subject Select -->
-            <label for="subject">Subject:</label>
+            <label for="subject">Matéria:</label>
             <select id="subject" name="subject">
                 <option value="">Select a subject</option>
                 <option value="math">Math</option>
@@ -92,7 +93,7 @@
                 <!-- Add more options here -->
             </select>
             <!-- Theme Select -->
-            <label for="theme">Theme:</label>
+            <label for="theme">Assunto:</label>
             <select id="theme" name="theme">
                 <option value="">Select a theme</option>
                 <option value="geometry">Geometry</option>
@@ -101,7 +102,7 @@
                 <!-- Add more options here -->
             </select>
             <!-- Submit Button -->
-            <button type="submit">Post</button>
+            <input type="submit" class="">Postar</input>
         </form>
     </div>
 
