@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,10 +61,10 @@
     <!--div user info-->
     <div class="user-container">
         <div class="user-info">
-            <img class="user-img" src="./assets/img/photo.jpg" alt="photo">
+            <img class="user-img" src="../images/profile_image.svg" alt="photo">
             <div class="user-details">
-                <h3 class="user-name">Eleanor Pena</h3>
-                <p class="user-occupation">Veterinária</p>
+                <h3 class="user-name"><?php echo($_COOKIE['name'])?></h3>
+                <p class="user-occupation">Desenvolvedor(a)</p>
             </div>
         </div>
         <a class="menu-item" href="./login.php">

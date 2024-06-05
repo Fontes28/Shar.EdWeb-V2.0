@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/feed.css">
     <link rel="icon" type="image/x-icon" href="../images/sharEd.ico">
     <script src="../scripts/sidebar.js" defer></script>
+    <script src="../scripts/postActivator.js"></script>
 </head>
 <nav class="navbar">
     <div class="navbar-container">

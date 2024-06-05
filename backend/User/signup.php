@@ -31,7 +31,7 @@ if($user->signup()){
 else{
     $user_arr=array(
         "status" => false,
-        "message" => "Username already exists!"
+        "message" => "Email já está cadastrado no sistema"
     );
 }
 print_r(json_encode($user_arr));

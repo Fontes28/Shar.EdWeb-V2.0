@@ -46,7 +46,6 @@ body {
     position: relative;
 }
 
-
 /*navbar*/
 .navbar {
     z-index: 2;
@@ -185,6 +184,10 @@ body {
     font-weight: lighter;
 }
 
+.logout-img{
+    border-radius: 100px;
+}
+
 
 
 /*navbar.active*/
@@ -290,7 +293,7 @@ body {
     .dashboard .title {
         font-size: 1.7rem;
     }
-}  
+}   
 .profile-container {
 
     max-width: 400px;

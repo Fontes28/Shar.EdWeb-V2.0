@@ -1,5 +1,4 @@
 <?php
-
 class User{
  
     // database connection and table name
@@ -70,6 +69,21 @@ class User{
                     " . $this->table_name . " 
                 WHERE
                     email='".$this->email."' AND password='".$this->password."'";
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+        // execute query
+        $stmt->execute();
+        return $stmt;
+    }
+
+    function load(){
+        // select all query with user inputed username and password
+        $query = "SELECT
+                    `id`, `name`, `areaId`
+                FROM
+                    'subject' 
+                WHERE
+                    'inactive' = 0";
         // prepare query statement
         $stmt = $this->conn->prepare($query);
         // execute query

@@ -60,7 +60,7 @@ class User{
     function login(){
         // select all query with user inputed username and password
         $query = "SELECT
-                    `id`, `name`, `email`, `password`, `created`
+                    `id`, `name`, `email`, `password`, `created`,`type`
                 FROM
                     " . $this->table_name . " 
                 WHERE

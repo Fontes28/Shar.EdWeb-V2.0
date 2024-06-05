@@ -1,13 +1,11 @@
-<?php 
-$name=$_COOKIE['name']
-?>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shar.Ed</title>
-    <link rel="stylesheet" href="../styles/profile.css">
-    <link rel="icon" type="image/x-icon" href="../images/sharEd.ico">
+    <title>Cadastrar ExtraCurricular</title>
+    <link rel="stylesheet" href="../styles/contentPosting.css">
     <script src="../scripts/sidebar.js" defer></script>
 </head>
 <nav class="navbar">
@@ -61,10 +59,10 @@ $name=$_COOKIE['name']
     <!--div user info-->
     <div class="user-container">
         <div class="user-info">
-            <img class="user-img" src="../images/profile_image.svg" alt="photo">
+            <img class="user-img" src="./assets/img/photo.jpg" alt="photo">
             <div class="user-details">
-                <h3 class="user-name"><?php echo($name)?></h3>
-                <p class="user-occupation">Desenvolvedor(a)</p>
+                <h3 class="user-name">Eleanor Pena</h3>
+                <p class="user-occupation">Veterinária</p>
             </div>
         </div>
         <a class="menu-item" href="./login.php">
@@ -73,70 +71,34 @@ $name=$_COOKIE['name']
     </div>
 </nav>
 <body>
-    <div class="profile-container dashboard" id="container-test">
-        <div class="profile-header">
-            <img src="https://via.placeholder.com/80" alt="Profile Image" class="profile-image">
-            <div class="profile-info">
-                <h2 class="username"><?php echo($name)?></h2>
-                <p class="bio">Software Engineer | Basketball</p>
-                <a href="../pages/auxPages/editProfile.php"><input type="button" value="Editar" class="edit-button"></a>
-            </div>
-            
-            <div class="stats-box">
-
-                <div class="stats-item">
-
-                    <div class="stats-label">Posts:</div>
-
-                    <div class="stats-value">10</div>
-
-                </div>
-
-                <div class="stats-item">
-
-                    <div class="stats-label">Coins:</div>
-
-                    <div class="stats-value">500</div>
-
-                </div>
-
-            </div>
-            
-        </div>
-        <div class="posts">
-            <div class="post">
-                <img src="https://placehold.co/400x200" alt="Post Image" class="post-image">
-                <p class="post-caption">Legenda 1</p>
-            </div>
-            <div class="post">
-                <img src="https://placehold.co/400x200" alt="Post Image" class="post-image">
-                <p class="post-caption">Legenda 2</p>
-            </div>
-            <div class="post">
-                <img src="https://placehold.co/400x200" alt="Post Image" class="post-image">
-                <p class="post-caption">Legenda 3</p>
-            </div>
-            <div class="post">
-                <img src="https://placehold.co/400x200" alt="Post Image" class="post-image">
-                <p class="post-caption">Legenda 4</p>
-            </div>
-            <div class="post">
-                <img src="https://placehold.co/400x200" alt="Post Image" class="post-image">
-                <p class="post-caption">Legenda 5</p>
-            </div>
-            <div class="post">
-                <img src="https://placehold.co/400x200" alt="Post Image" class="post-image">
-                <p class="post-caption">Legenda 6</p>
-            </div>
-        </div>
+    <div class="form-container dashboard">
+        <form>
+            <!-- File Input -->
+            <label for="file">Certificado:</label>
+            <input type="file" id="file" name="file">
+            <!-- Subject Select -->
+            <label for="subject">Matéria:</label>
+            <select id="subject" name="subject">
+                <option value="">Selecione uma Matéria</option>
+                <option value="math">Matemática</option>
+                <option value="portuguese">Português</option>
+                <option value="english">Inglês</option>
+                <!-- Add more options here -->
+            </select>
+            <!-- Theme Select -->
+            <label for="type">Tipo:</label>
+            <select id="type" name="type">
+                <option value="">Escolha um tipo</option>
+                <option value="lecture">Palestra</option>
+                <option value="workshop">Oficina</option>
+            </select>
+            <!-- Description Input -->
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description"></textarea>
+            <!-- Submit Button -->
+            <button type="submit">Postar</button>
+        </form>
     </div>
-
-    <script>
-        // Add event listener to profile image
-        document.querySelector('.profile-image').addEventListener('click', function() {
-            alert('Profile image clicked!');
-        });
-    </script>
 
 </body>
 </html>

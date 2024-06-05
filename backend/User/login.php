@@ -29,12 +29,14 @@ if($stmt->rowCount() > 0){
         
     );
     setcookie('name',$row['name'],time()+3600,'/');
+    setcookie('email',$row['email'],time()+ 3600,'/');
+    setcookie('type',$row['type'],time()+ 3600,'/');
     header('Location: ../../frontend/pages/feed.php');
 }
 else{
     $user_arr=array(
         "status" => false,
-        "message" => "Invalid Username or Password!",
+        "message" => "Email ou Senha Incorretos",
     );
     setcookie('msg',$user_arr['message'],time()+600,'/');
     header('Location: ../../frontend/pages/auxPages/error.php');

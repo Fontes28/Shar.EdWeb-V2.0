@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-like Post Card</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        
+        /* Post Card Styles */
+        .post-card {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .post-card .post-content {
+            padding: 20px;
+        }
+        .post-card .post-content .username {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+        .post-card .post-content .post-text {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .post-card .post-content .post-actions {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .post-card .post-content .post-actions button {
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .post-card .post-content .post-actions button:hover {
+            background-color: #23527c;
+        }
+        
+        /* Like Button Styles */
+        .like-button {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .like-button .like-icon {
+            font-size: 18px;
+            color: #337ab7;
+            cursor: pointer;
+        }
+        .like-button .like-icon:hover {
+            color: #23527c;
+        }
+        .like-button .like-count {
+            font-size: 14px;
+            color: #666;
+            margin-left: 5px;
+        }
+        
+        /* Comment Styles */
+        .comment-input-container {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .comment-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+        }
+        .comment-submit {
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .comment-submit:hover {
+            background-color: #23527c;
+        }
+        .comment-list {
+            padding: 10px;
+        }
+        .comment-list .comment {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .comment-list .comment .username {
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+        .comment-list .comment .comment-text {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-card">
+        <img src="https://via.placeholder.com/300x200" alt="Post Image">
+        <div class="post-content">
+            <span class="username">john_doe</span>
+            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <div class="post-actions">
+                <button class="comment-button">Comment</button>
+                <div class="like-button">
+                    <i class="like-icon fa fa-heart-o"></i>
+                    <span class="like-count">12 likes</span>
+                </div>
+            </div>
+            <div class="comment-input-container">
+                <input type="text" class="comment-input" placeholder="Add a comment...">
+                <button class="comment-submit">Post</button>
+            </div>
+            <div class="comment-list">
+                <!-- Comments will be rendered here -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Like Button Functionality
+        const likeButton = document.querySelector('.like-button');
+        let likeCount = 12;
+        
+        likeButton.addEventListener('click', () => {
+            likeCount++;
+            likeButton.querySelector('.like-count').textContent = `${likeCount} likes`;
+            likeButton.querySelector('.like-icon').classList.toggle('fa-heart-o');
+            likeButton.querySelector('.like-icon').classList.toggle('fa-heart');
+        });
+        
+        // Comment Functionality
+        const commentButton = document.querySelector('.comment-button');
+        const commentInput = document.querySelector('.comment-input');
+        const commentSubmit = document.querySelector('.comment-submit');
+        const commentList = document.querySelector('.comment-list');
+        
+        commentButton.addEventListener('click', () => {
+            commentInput.focus();
+        });
+        
+        commentSubmit.addEventListener('click', () => {
+            const commentText = commentInput.value.trim();
+            if (commentText) {
+                const commentHTML = `
+                    <div class="comment">
+                        <span class="username">john_doe</span>
+                        <p class="comment-text">${commentText}</p>
+                    </div>
+                `;
+                commentList.innerHTML += commentHTML;
+                commentInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
