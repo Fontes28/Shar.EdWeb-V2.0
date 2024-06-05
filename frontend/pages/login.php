@@ -1,3 +1,14 @@
+<?php 
+if(!isset($_COOKIE['msg']))
+{
+    $msg='';
+}
+else{
+    $msg=$_COOKIE['msg'];
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +31,9 @@
                 <form method="post" action="../../../Shar.EdWeb-V2.0/backend/User/login.php">
                     <label for="email" class="sr-only">Email</label>
                     <input name="email" placeholder="e-mail" />
-
                     <label for="password" class="sr-only">Senha</label>
                     <input name="password" type="password" placeholder="Senha" />
+                    <h5><?php echo($msg)?></h5>
                     <a href="../pages/auxPages/password_recover.php">Esqueceu a Senha?</a>
                     <input type="submit"  class="btnLogin" value="Entrar">
                     <h4>

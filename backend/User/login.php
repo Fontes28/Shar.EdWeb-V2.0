@@ -39,7 +39,7 @@ else{
         "message" => "Email ou Senha Incorretos",
     );
     setcookie('msg',$user_arr['message'],time()+600,'/');
-    header('Location: ../../frontend/pages/auxPages/error.php');
+    header('Location: ../../frontend/pages/login.php');
 }
 // make it json format
 print_r(json_encode($user_arr));

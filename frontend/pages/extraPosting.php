@@ -96,7 +96,7 @@
             <label for="description">Descrição:</label>
             <textarea id="description" name="description"></textarea>
             <!-- Submit Button -->
-            <button type="submit">Postar</button>
+            <button type="submit" class="edit-button">Postar</button>
         </form>
     </div>
 

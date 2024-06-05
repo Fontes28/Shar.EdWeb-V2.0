@@ -95,14 +95,14 @@
             <!-- Theme Select -->
             <label for="theme">Assunto:</label>
             <select id="theme" name="theme">
-                <option value="">Select a theme</option>
+                <option value="">Selecione um tema</option>
                 <option value="geometry">Geometria</option>
                 <option value="algebra">Ecologia</option>
                 <option value="calculus">Eletrodinâmica</option>
                 <!-- Add more options here -->
             </select>
             <!-- Submit Button -->
-            <button type="submit" class="">Postar</button>
+            <button type="submit" class="edit-button">Postar</button>
         </form>
     </div>
 

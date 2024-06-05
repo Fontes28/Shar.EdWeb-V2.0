@@ -15,17 +15,39 @@
 }
 
 
-button {
-    border: none;
-    outline: none;
-    background: none; 
-    cursor: pointer;
+
+form { padding: 30px 20px; width: 100%; }
+
+form .sr-only { display: none; }
+
+form input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #03000a;
+    margin-bottom: 8px;
+    padding: 10px 10px;
+    width: 100%;
 }
 
-input {
-    border: none; 
+form input::placeholder {
+    color: #2d095c;
+}
+
+form input:focus {
+    border: 1px solid #808080;
     outline: none;
-    background: none; 
+}
+
+.btnLogin {
+    background-color: #140592;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    height: 35px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
 }
 
 a {

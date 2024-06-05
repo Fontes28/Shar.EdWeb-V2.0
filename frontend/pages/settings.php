@@ -44,9 +44,9 @@
             </li>
             
             <li class="menu-item">                            
-                <a class="menu-link" href="./saved">
+                <a class="menu-link" href="./extraPosting.php">
                     <img src="../images/savedIcon.svg" title="Saved" class="menu-icon" alt="saved" height="48" width="48">
-                    <span class="menu-link-text">Salvos</span>    
+                    <span class="menu-link-text">ExtraCurriculares</span>    
                 </a>
             </li>
             <li class="menu-item">                        
@@ -77,32 +77,34 @@
 <form>
             
             <div class="setting">
-                <label class="setting-label">Receive Notifications</label>
+                <label class="setting-label">Receber Notificações</label>
                 <div class="switch">
                     <input type="checkbox" id="notifications" checked>
                     <label class="switch-label" for="notifications"></label>
                 </div>
             </div>
             <div class="setting">
-                <label class="setting-label">Dark Mode</label>
+                <label class="setting-label">Modo Escuro</label>
                 <div class="switch">
                     <input type="checkbox" id="dark-mode">
                     <label class="switch-label" for="dark-mode"></label>
                 </div>
             </div>
+            <button class="save-btn">Salvar Alterações</button>
+            <br>
             <div class="setting">
-                <label class="setting-label">Password Reset</label>
-                <button class="save-btn" id="reset-password">Reset Password</button>
+                <label class="setting-label">Redefinir Senha</label>
+                <button class="save-btn" id="reset-password">Redefinir</button>
             </div>
-            <div class="setting">
-                <label class="setting-label">Account Deletion</label>
-                <button class="danger-btn" id="delete-account">Delete Account</button>
-            </div>
-            <button class="save-btn">Save Changes</button>
+            
+            
 
             
         </form>
-
+    <div class="setting">
+                <label class="setting-label">Apagar Conta</label>
+                <button class="danger-btn" id="delete-account">Apagar</button>
+            </div>
     </div>
 
     <script>

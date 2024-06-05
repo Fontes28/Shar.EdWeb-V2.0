@@ -78,7 +78,9 @@ $name=$_COOKIE['name']
             <img src="https://via.placeholder.com/80" alt="Profile Image" class="profile-image">
             <div class="profile-info">
                 <h2 class="username"><?php echo($name)?></h2>
-                <p class="bio">Software Engineer | Basketball</p>
+                <p class="bio">@<?php echo($_COOKIE['email'])?></p>
+                <br>
+                <p class="bio">Desenvolvedor(a)</p>
                 <a href="../pages/auxPages/editProfile.php"><input type="button" value="Editar" class="edit-button"></a>
             </div>
             
