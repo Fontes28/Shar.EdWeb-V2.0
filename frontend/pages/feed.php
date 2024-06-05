@@ -42,9 +42,9 @@
             </li>
             
             <li class="menu-item">                            
-                <a class="menu-link" href="./saved">
+                <a class="menu-link" href="./extraPosting.php">
                     <img src="../images/savedIcon.svg" title="Saved" class="menu-icon" alt="saved" height="48" width="48">
-                    <span class="menu-link-text">Salvos</span>    
+                    <span class="menu-link-text">Extracurriculares</span>    
                 </a>
             </li>
             <li class="menu-item">                        
@@ -58,11 +58,11 @@
 
     <!--div user info-->
     <div class="user-container">
-        <div class="user-info">
-            <img class="user-img" src="./assets/img/photo.jpg" alt="photo">
+    <div class="user-info">
+            <img class="user-img" src="../images/profile_image.svg" alt="photo">
             <div class="user-details">
-                <h3 class="user-name">Eleanor Pena</h3>
-                <p class="user-occupation">Veterinária</p>
+                <h3 class="user-name"><?php echo($_COOKIE['name'])?></h3>
+                <p class="user-occupation">Desenvolvedor(a)</p>
             </div>
         </div>
         <a class="menu-item" href="./login.php">

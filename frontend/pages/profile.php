@@ -44,9 +44,9 @@ $name=$_COOKIE['name']
             </li>
             
             <li class="menu-item">                            
-                <a class="menu-link" href="./saved">
+                <a class="menu-link" href="./extraPosting.php">
                     <img src="../images/savedIcon.svg" title="Saved" class="menu-icon" alt="saved" height="48" width="48">
-                    <span class="menu-link-text">Salvos</span>    
+                    <span class="menu-link-text">ExtraCurriculares</span>    
                 </a>
             </li>
             <li class="menu-item">                        

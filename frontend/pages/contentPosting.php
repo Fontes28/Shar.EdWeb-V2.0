@@ -86,23 +86,23 @@
             <!-- Subject Select -->
             <label for="subject">Matéria:</label>
             <select id="subject" name="subject">
-                <option value="">Select a subject</option>
-                <option value="math">Math</option>
-                <option value="portuguese">Portuguese</option>
-                <option value="english">English</option>
+                <option value="">Selecione a Matéria</option>
+                <option value="math">Matemática</option>
+                <option value="portuguese">Português</option>
+                <option value="english">Física</option>
                 <!-- Add more options here -->
             </select>
             <!-- Theme Select -->
             <label for="theme">Assunto:</label>
             <select id="theme" name="theme">
                 <option value="">Select a theme</option>
-                <option value="geometry">Geometry</option>
-                <option value="algebra">Algebra</option>
-                <option value="calculus">Calculus</option>
+                <option value="geometry">Geometria</option>
+                <option value="algebra">Ecologia</option>
+                <option value="calculus">Eletrodinâmica</option>
                 <!-- Add more options here -->
             </select>
             <!-- Submit Button -->
-            <input type="submit" class="">Postar</input>
+            <button type="submit" class="">Postar</button>
         </form>
     </div>
 

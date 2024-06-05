@@ -13,7 +13,6 @@
     <title>Erro</title>
 </head>
 <body>
-  <h1><?echo($msg)?></h1>
 <main>
       <svg
         id="b6c881ec-80a2-4aeb-a87c-bea63cd39014"

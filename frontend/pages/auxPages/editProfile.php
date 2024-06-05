@@ -67,22 +67,23 @@
 </head>
 <body>
 	<div class="container">
-		<div class="profile-picture">
-			<img src="https://example.com/profile-picture.jpg" alt="Profile Picture">
-		</div>
 		<div class="profile-info">
-			<div class="profile-name">John Doe</div>
-			<div class="profile-username">@johndoe</div>
+			<div class="profile-name"><?php echo($_COOKIE['name'])?></div>
+			<div class="profile-username">@<?php echo($_COOKIE['email'])?></div>
 			<form>
 				<div class="form-group">
-					<label for="name" class="form-label">Name</label>
-					<input type="text" id="name" class="form-input" value="John Doe">
+					<label for="name" class="form-label">Nome</label>
+					<input type="text" id="name" class="form-input" value="Nome">
 				</div>
 				<div class="form-group">
-					<label for="username" class="form-label">Username</label>
-					<input type="text" id="username" class="form-input" value="johndoe">
+					<label for="username" class="form-label">UserName</label>
+					<input type="text" id="username" class="form-input" value="@">
 				</div>
-				<button type="submit" class="form-submit">Save Changes</button>
+				<div class="form-group">
+					<label for="bio" class="form-label">Biografia</label>
+					<input type="text" id="username" class="form-input" value="bio">
+				</div>
+				<button type="submit" class="form-submit">Salvar Alterações</button>
 			</form>
 		</div>
 	</div>

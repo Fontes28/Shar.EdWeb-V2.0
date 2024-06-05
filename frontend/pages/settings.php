@@ -99,6 +99,8 @@
                 <button class="danger-btn" id="delete-account">Delete Account</button>
             </div>
             <button class="save-btn">Save Changes</button>
+
+            
         </form>
 
     </div>
