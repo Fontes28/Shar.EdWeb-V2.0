@@ -90,4 +90,32 @@ class User{
             return false;
         }
     }
+
+    function selectUsers()
+{
+    $query = "SELECT * FROM " . $this->table_name . "";
+    $stmt = $this->conn->prepare($query);
+    $stmt->execute();
+    $users = array();
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $user = new User($this->conn);
+        $user->id = $row['id'];
+        $user->name = $row['name'];
+        $user->email = $row['email'];
+        $user->password = $row['password'];
+        $user->created = $row['created'];
+        $users[] = $user; 
+    }
+    return $users;
+}
+
+function deleteUser(){
+    $query = "DELETE FROM " . $this->table_name . " WHERE id=:id";
+    $stmt = $this->conn->prepare($query);
+    $stmt->bindParam(":id", $this->id);
+    if($stmt->execute()){
+        return true;
+    }
+    return false;
+}
 }

@@ -33,7 +33,7 @@ else{
                     <input name="email" placeholder="e-mail" />
                     <label for="password" class="sr-only">Senha</label>
                     <input name="password" type="password" placeholder="Senha" />
-                    <h5><?php echo($msg)?></h5>
+                    <h5  style="color:red;"><?php echo($msg)?></h5>
                     <a href="../pages/auxPages/password_recover.php">Esqueceu a Senha?</a>
                     <input type="submit"  class="btnLogin" value="Entrar">
                     <h4>
